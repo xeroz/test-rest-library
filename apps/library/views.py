@@ -13,7 +13,7 @@ from .serializers import (
 @api_view(['GET', 'POST'])
 def book_list(request):
     """
-        List all code categories, or create a new category.
+        List all code books, or create a new book.
     """
     if request.method == 'GET':
         books = Book.objects.all()
